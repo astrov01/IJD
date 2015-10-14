@@ -23,7 +23,7 @@ p {
 }
 
 #Dropdown{
-
+    color: #337AB7;
 }
 
 #navsalir{
@@ -58,4 +58,8 @@ footer a:hover {
 #container{
     color:black;
     padding-top: 10%;
+}
+
+.dropdown{
+    color: #337AB7;
 }
