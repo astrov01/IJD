@@ -38,6 +38,7 @@
                 <li><a href="entrevistas.html" style="color: whitesmoke">Entrevista</a></li>
                 <li><a href="evaluacion.html" style="color: whitesmoke">Evaluación</a></li>
                 <li><a href="inscripcion.html" style="color: whitesmoke">Inscripcion</a></li>
+                <li><a href="becas.html" style="color: whitesmoke">Becas</a></li>
                <!-- <li class="dropdown">
                     <a id="Dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">Proceso de pago <span class="caret"></span></a>
                     <ul style="color: #337AB7" class="dropdown-menu">
@@ -63,7 +64,22 @@
     <!-- Main component for a primary marketing message or call to action -->
     <div class="inicio">
         <h1>Entrevistas</h1>
-        <p class="lead">ENTREVISTAS PENDIENTES<br>ENTREVISTAS COMPLETADAS</p>
+        <form role="form">
+            <div class="form-group">
+                <label for="inputlg">Nombre del Alumno</label>
+                <input class="form-control input-lg" id="inputlg" type="text">
+            </div>
+        </form>
+        <form role="form">
+            <div class="form-group">
+                <label for="inputlg">Matricula</label>
+                <input class="form-control input-lg" id="inputlg" type="text">
+            </div>
+        </form>
+
+        <div id="bottom">
+            <button id="EditarButtom" type="button" class="btn btn-primary">Impresion Diagnóstica</button>
+        </div>
     </div>
 
 </div> <!-- /container -->

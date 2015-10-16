@@ -1,9 +1,5 @@
 h1 {
- font: 150%;
-}
-
-p {
-    font: 150%;
+ font-size: 25px;
 }
 
 .navbar-brand{
@@ -32,10 +28,9 @@ p {
 
 body {
 
-    min-height: 2000px;
-    padding-top: 1px;
+    min-height: 900px;
+    padding-top: 5px;
 }
-
 
 footer {
     color: whitesmoke;
@@ -43,11 +38,11 @@ footer {
     padding: 17px 0 18px 0;
     border-top: 1px solid #337AB7;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     width: 100%;
-    height: 50px;
 
 }
+
 footer a {
     color: #999;
 }
@@ -57,9 +52,13 @@ footer a:hover {
 
 #container{
     color:black;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .dropdown{
     color: #337AB7;
+}
+
+#bottom{
+    text-align: center;
 }

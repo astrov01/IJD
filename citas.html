@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!--<link rel="icon" href="../../favicon.ico">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <title>Citas</title>
 
@@ -17,7 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="css/stylesheet.css" rel="stylesheet">
 </head>
-<body  style="overflow-y:hidden">
+<body  style="overflow-y:auto" style= position:relative;>
 
 <!-- Fixed navbar -->
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -38,6 +39,7 @@
                 <li><a href="entrevistas.html" style="color: whitesmoke">Entrevista</a></li>
                 <li><a href="evaluacion.html" style="color: whitesmoke">Evaluación</a></li>
                 <li><a href="inscripcion.html" style="color: whitesmoke">Inscripcion</a></li>
+                <li><a href="becas.html" style="color: whitesmoke">Becas</a></li>
                 <!--<li class="dropdown">
                     <a id="Dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">Proceso de pago <span class="caret"></span></a>
                     <ul style="color: #337AB7" class="dropdown-menu">
@@ -62,19 +64,13 @@
 
     <form role="form">
         <div class="form-group">
-            <label for="inputlg">Nombre</label>
+            <label for="inputlg">Nombre(s)</label>
             <input class="form-control input-lg" id="inputlg" type="text">
         </div>
     </form>
     <form role="form">
         <div class="form-group">
-            <label for="inputlg">Apellido Paterno</label>
-            <input class="form-control input-lg" id="inputlg" type="text">
-        </div>
-    </form>
-    <form role="form">
-        <div class="form-group">
-            <label for="inputlg">Apellido Materno</label>
+            <label for="inputlg">Apellido(s)</label>
             <input class="form-control input-lg" id="inputlg" type="text">
         </div>
     </form>
@@ -86,13 +82,7 @@
     </form>
     <form role="form">
         <div class="form-group">
-            <label for="inputlg">Telefono Casa</label>
-            <input class="form-control input-lg" id="inputlg" type="text">
-        </div>
-    </form>
-    <form role="form">
-        <div class="form-group">
-            <label for="inputlg">Telefono Celular</label>
+            <label for="inputlg">Telefono</label>
             <input class="form-control input-lg" id="inputlg" type="text">
         </div>
     </form>
@@ -103,7 +93,16 @@
         </div>
     </form>
 
+    <div class="input-append date" id="dp3" date-date="12-02-2012" date-date-format="dd-mm-yy">
+
+        <input class="span2" size="16" type="text" value="12-02-2012">
+        <span class="add-on"><i class="icon-th"></i></span>
+
+    </div>
+
+
 </div> <!-- /container -->
+
 
 <footer>
     <div class="container">
