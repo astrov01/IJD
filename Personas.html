@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Inscripción</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../IJD/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body  style="overflow-y:hidden">
+
+<!-- Fixed navbar -->
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="UserName" class="navbar-brand" href="usuario.html">Nombre Usuario</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul id="font" class="nav navbar-nav">
+                <li><a href="inicio.html" style="color: whitesmoke">Inicio</a></li>
+                <li><a href="citas.html" style="color: whitesmoke">Agendar Cita</a></li>
+                <li><a href="entrevistas.html" style="color: whitesmoke">Entrevista</a></li>
+                <li><a href="evaluacion.html" style="color: whitesmoke">Evaluación</a></li>
+                <li><a href="inscripcion.html" style="color: whitesmoke">Inscripcion</a></li>
+                <!--<li class="dropdown">
+                    <a id="Dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">Proceso de pago <span class="caret"></span></a>
+                    <ul style="color: #337AB7" class="dropdown-menu">
+                        <li><a href="#" style="color: whitesmoke">Entrevista</a></li>
+                        <li><a href="#" style="color: whitesmoke">Evaluacion</a></li>
+                        <li><a href="#" style="color: whitesmoke">Terapia</a></li>
+                        <!--    <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li> -->
+                  <!--  </ul>
+                </li> -->
+            </ul>
+            <ul id="navsalir" class="nav navbar-nav navbar-right">
+                <li ><a href="SignIn.html" style="color: whitesmoke">Salir <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div id="container" class="container">
+
+    <form action="#" method="post">
+
+
+        <fieldset>
+            <div class="form-group">
+                <label for="patient_ControlNumber">Numero de control</label>
+                <input class="form-control" id="patient_ControlNumber" name="patient.ControlNumber" value="1" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_FirstName">Nombre</label>
+                <input class="form-control" id="patient_FirstName" name="patient.FirstName" value="Pedrito" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_LastName">Apellido paterno</label>
+                <input class="form-control" id="patient_LastName" name="patient.LastName" value="Lo" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_MotherLastName">Apellido materno</label>
+                <input class="form-control" id="patient_MotherLastName" name="patient.MotherLastName" value="Kiwi" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_Sex">Seco</label>
+                <select class="form-control" id="patient_Sex" name="patient.Sex">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_RFC">RFC</label>
+                <input class="form-control" id="patient_RFC" name="patient.RFC" value="qwe" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_CURP">CURP</label>
+                <input class="form-control" id="patient_CURP" name="patient.CURP" value="qwe" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_birthdate">Fecha de nacimiento</label>
+                <input class="form-control" data-val="true" data-val-date="The field Fecha de nacimiento must be a date." data-val-required="The Fecha de nacimiento field is required." id="patient_birthdate" name="patient.birthdate" value="1/1/2000 12:00:00 AM" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_placeOfBirth">Lugar de nacimiento</label>
+                <input class="form-control" id="patient_placeOfBirth" name="patient.placeOfBirth" value="Chihuahua" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_Address">Direccion</label>
+                <input class="form-control" id="patient_Address" name="patient.Address" value="XX" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_interiorNumber">Numero interior</label>
+                <input class="form-control" data-val="true" data-val-number="The field Numero interior must be a number." data-val-required="The Numero interior field is required." id="patient_interiorNumber" name="patient.interiorNumber" value="0" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_exteriorNumber">Numero exterior</label>
+                <input class="form-control" data-val="true" data-val-number="The field Numero exterior must be a number." data-val-required="The Numero exterior field is required." id="patient_exteriorNumber" name="patient.exteriorNumber" value="0" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_colony">Colonia</label>
+                <input class="form-control" id="patient_colony" name="patient.colony" value="xx" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_zipCode">Codigo postal</label>
+                <input class="form-control" data-val="true" data-val-number="The field Codigo postal must be a number." data-val-required="The Codigo postal field is required." id="patient_zipCode" name="patient.zipCode" value="0" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_countryStateId">Estado</label>
+                <select class="form-control" data-val="true" data-val-number="The field Estado must be a number." data-val-required="The Estado field is required." id="patient_FK_countryStateId" name="patient.FK_countryStateId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="2">Chihuahua</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_cityId">Ciudad</label>
+                <select class="form-control" data-val="true" data-val-number="The field Ciudad must be a number." data-val-required="The Ciudad field is required." id="patient_FK_cityId" name="patient.FK_cityId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Chihuahua</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_academicLevelId">Nivel academico</label>
+                <select class="form-control" data-val="true" data-val-number="The field Nivel academico must be a number." data-val-required="The Nivel academico field is required." id="patient_FK_academicLevelId" name="patient.FK_academicLevelId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Kinder</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_schoolName">Nombre de la escuela</label>
+                <input class="form-control" id="patient_schoolName" name="patient.schoolName" value="Kinder Uno" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_schoolAddress">Direccion de la escuela</label>
+                <input class="form-control" id="patient_schoolAddress" name="patient.schoolAddress" value="XX" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_keyWorkpalce">Clave del centro de trabajo</label>
+                <input class="form-control" id="patient_keyWorkpalce" name="patient.keyWorkpalce" value="XX" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_scholarGradeId">Grado escolar</label>
+                <select class="form-control" data-val="true" data-val-number="The field Grado escolar must be a number." data-val-required="The Grado escolar field is required." id="patient_FK_scholarGradeId" name="patient.FK_scholarGradeId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Primero</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_scholarSystemId">Sistema escolar</label>
+                <select class="form-control" data-val="true" data-val-number="The field Sistema escolar must be a number." data-val-required="The Sistema escolar field is required." id="patient_FK_scholarSystemId" name="patient.FK_scholarSystemId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Publico</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_workShiftId">Turno</label>
+                <select class="form-control" data-val="true" data-val-number="The field Turno must be a number." data-val-required="The Turno field is required." id="patient_FK_workShiftId" name="patient.FK_workShiftId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Matitino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_parentsMaritalStatus">Estado civil de los padres</label>
+                <select class="form-control" data-val="true" data-val-number="The field Estado civil de los padres must be a number." data-val-required="The Estado civil de los padres field is required." id="patient_FK_parentsMaritalStatus" name="patient.FK_parentsMaritalStatus">
+                    <option value="">(Seleccione)</option>
+                    <option value="0">Soltero</option>
+                    <option selected="selected" value="1">Casado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_medicalInstitutionId">Institucion medica</label>
+                <select class="form-control" data-val="true" data-val-number="The field Institucion medica must be a number." data-val-required="The Institucion medica field is required." id="patient_FK_medicalInstitutionId" name="patient.FK_medicalInstitutionId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">IMSS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_mainAreaOFAttention">Área principal de atencion</label>
+                <select class="form-control" data-val="true" data-val-number="The field Área principal de atencion must be a number." data-val-required="The Área principal de atencion field is required." id="patient_FK_mainAreaOFAttention" name="patient.FK_mainAreaOFAttention">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Audición</option>
+                    <option value="2">Autismo</option>
+                    <option value="3">Aprendizaje</option>
+                    <option value="4">Lenguaje</option>
+                    <option value="5">Intervención temprana</option>
+                    <option value="6">Afacias</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient_startTerapyDate">Fecha de inicio de terapia</label>
+                <input class="form-control" data-val="true" data-val-date="The field Fecha de inicio de terapia must be a date." data-val-required="The Fecha de inicio de terapia field is required." id="patient_startTerapyDate" name="patient.startTerapyDate" value="1/1/2015 12:00:00 AM" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_endTerapyDate">Fecha de baja de terapia</label>
+                <input class="form-control" data-val="true" data-val-date="The field Fecha de baja de terapia must be a date." data-val-required="The Fecha de baja de terapia field is required." id="patient_endTerapyDate" name="patient.endTerapyDate" value="1/1/2015 12:00:00 AM" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_registerTerapyDate">Fecha de inscripción</label>
+                <input class="form-control" data-val="true" data-val-date="The field Fecha de inscripción must be a date." data-val-required="The Fecha de inscripción field is required." id="patient_registerTerapyDate" name="patient.registerTerapyDate" value="1/1/2015 12:00:00 AM" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_registrationDate">Fecha de inscripcion</label>
+                <input class="form-control" data-val="true" data-val-date="The field Fecha de inscripcion must be a date." data-val-required="The Fecha de inscripcion field is required." id="patient_registrationDate" name="patient.registrationDate" value="1/1/2015 12:00:00 AM" type="text">
+            </div>
+            <div class="form-group">
+                <label for="patient_FK_socioeconomicLevelId">Nivel socioeconómico</label>
+                <select class="form-control" data-val="true" data-val-number="The field Nivel socioeconómico must be a number." data-val-required="The Nivel socioeconómico field is required." id="patient_FK_socioeconomicLevelId" name="patient.FK_socioeconomicLevelId">
+                    <option value="">(Seleccione)</option>
+                    <option selected="selected" value="1">Bajo</option>
+                </select>
+            </div>
+
+            <input class="btn btn-primary" name="btnActionButton" value="Actualizar" type="submit">
+        </fieldset>
+    </form>
+    <div style="margin-top:15px;">
+        <a class="btn btn-default" role="button" href="#">Regresar</a>
+    </div>
+
+
+
+</div> <!-- /container -->
+
+<footer>
+    <div class="container">
+        <p>Instituto Jose David A.C. 2015. Proyecto desarrollado por Tisco Networks.</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../IJD/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
