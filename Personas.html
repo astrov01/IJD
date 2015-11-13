@@ -79,16 +79,16 @@
                          <input class="form-control" id="patient_LastName" name="patient.LastName" value="Lo" type="text">
                      </div>
                  </td>
+                 <td>
+                     <div class="form-group">
+                         <label for="patient_MotherLastName">Apellido materno</label>
+                         <input class="form-control" id="patient_MotherLastName" name="patient.MotherLastName" value="Kiwi" type="text">
+                     </div>
+                 </td>
              </tr>
 
 
             <tr>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_MotherLastName">Apellido materno</label>
-                        <input class="form-control" id="patient_MotherLastName" name="patient.MotherLastName" value="Kiwi" type="text">
-                    </div>
-                </td>
                 <td>
                     <div class="form-group">
                         <label for="patient_Sex">Sexo</label>
@@ -99,19 +99,10 @@
                         </select>
                     </div>
                 </td>
-            </tr>
-
-            <tr>
-                <td>
+                <td colspan="2">
                     <div class="form-group">
                         <label for="patient_RFC">RFC</label>
                         <input class="form-control" id="patient_RFC" name="patient.RFC" value="qwe" type="text">
-                    </div>
-                </td>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_CURP">CURP</label>
-                        <input class="form-control" id="patient_CURP" name="patient.CURP" value="qwe" type="text">
                     </div>
                 </td>
             </tr>
@@ -132,6 +123,16 @@
             </tr>
 
             <tr>
+                <td colspan="3">
+                    <div class="form-group">
+                        <label for="patient_CURP">CURP</label>
+                        <input class="form-control" id="patient_CURP" name="patient.CURP" value="qwe" type="text">
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_Address">Direccion</label>
@@ -142,15 +143,6 @@
                     <div class="form-group">
                         <label for="patient_interiorNumber">Numero interior</label>
                         <input class="form-control" data-val="true" data-val-number="The field Numero interior must be a number." data-val-required="The Numero interior field is required." id="patient_interiorNumber" name="patient.interiorNumber" value="0" type="text">
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_exteriorNumber">Numero exterior</label>
-                        <input class="form-control" data-val="true" data-val-number="The field Numero exterior must be a number." data-val-required="The Numero exterior field is required." id="patient_exteriorNumber" name="patient.exteriorNumber" value="0" type="text">
                     </div>
                 </td>
                 <td>
@@ -170,6 +162,15 @@
                 </td>
                 <td>
                     <div class="form-group">
+                        <label for="patient_exteriorNumber">Numero exterior</label>
+                        <input class="form-control" data-val="true" data-val-number="The field Numero exterior must be a number." data-val-required="The Numero exterior field is required." id="patient_exteriorNumber" name="patient.exteriorNumber" value="0" type="text">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
                         <label for="patient_FK_countryStateId">Estado</label>
                         <select class="form-control" data-val="true" data-val-number="The field Estado must be a number." data-val-required="The Estado field is required." id="patient_FK_countryStateId" name="patient.FK_countryStateId">
                             <option value="">(Seleccione)</option>
@@ -177,9 +178,6 @@
                         </select>
                     </div>
                 </td>
-            </tr>
-
-            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_FK_cityId">Ciudad</label>
@@ -189,12 +187,33 @@
                         </select>
                     </div>
                 </td>
+            </tr>
+
+            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_FK_academicLevelId">Nivel academico</label>
                         <select class="form-control" data-val="true" data-val-number="The field Nivel academico must be a number." data-val-required="The Nivel academico field is required." id="patient_FK_academicLevelId" name="patient.FK_academicLevelId">
                             <option value="">(Seleccione)</option>
                             <option selected="selected" value="1">Kinder</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label for="patient_FK_scholarSystemId">Sistema escolar</label>
+                        <select class="form-control" data-val="true" data-val-number="The field Sistema escolar must be a number." data-val-required="The Sistema escolar field is required." id="patient_FK_scholarSystemId" name="patient.FK_scholarSystemId">
+                            <option value="">(Seleccione)</option>
+                            <option selected="selected" value="1">Publico</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label for="patient_FK_scholarGradeId">Grado escolar</label>
+                        <select class="form-control" data-val="true" data-val-number="The field Grado escolar must be a number." data-val-required="The Grado escolar field is required." id="patient_FK_scholarGradeId" name="patient.FK_scholarGradeId">
+                            <option value="">(Seleccione)</option>
+                            <option selected="selected" value="1">Primero</option>
                         </select>
                     </div>
                 </td>
@@ -213,36 +232,6 @@
                         <input class="form-control" id="patient_schoolAddress" name="patient.schoolAddress" value="XX" type="text">
                     </div>
                 </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_keyWorkpalce">Clave del centro de trabajo</label>
-                        <input class="form-control" id="patient_keyWorkpalce" name="patient.keyWorkpalce" value="XX" type="text">
-                    </div>
-                </td>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_FK_scholarGradeId">Grado escolar</label>
-                        <select class="form-control" data-val="true" data-val-number="The field Grado escolar must be a number." data-val-required="The Grado escolar field is required." id="patient_FK_scholarGradeId" name="patient.FK_scholarGradeId">
-                            <option value="">(Seleccione)</option>
-                            <option selected="selected" value="1">Primero</option>
-                        </select>
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_FK_scholarSystemId">Sistema escolar</label>
-                        <select class="form-control" data-val="true" data-val-number="The field Sistema escolar must be a number." data-val-required="The Sistema escolar field is required." id="patient_FK_scholarSystemId" name="patient.FK_scholarSystemId">
-                            <option value="">(Seleccione)</option>
-                            <option selected="selected" value="1">Publico</option>
-                        </select>
-                    </div>
-                </td>
                 <td>
                     <div class="form-group">
                         <label for="patient_FK_workShiftId">Turno</label>
@@ -250,6 +239,15 @@
                             <option value="">(Seleccione)</option>
                             <option selected="selected" value="1">Matitino</option>
                         </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div class="form-group">
+                        <label for="patient_keyWorkpalce">Clave del centro de trabajo</label>
+                        <input class="form-control" id="patient_keyWorkpalce" name="patient.keyWorkpalce" value="XX" type="text">
                     </div>
                 </td>
             </tr>
@@ -291,21 +289,25 @@
                         </select>
                     </div>
                 </td>
+            </tr>
+
+            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_startTerapyDate">Fecha de inicio de terapia</label>
                         <input class="form-control" data-val="true" data-val-date="The field Fecha de inicio de terapia must be a date." data-val-required="The Fecha de inicio de terapia field is required." id="patient_startTerapyDate" name="patient.startTerapyDate" value="1/1/2015 12:00:00 AM" type="text">
                     </div>
                 </td>
-            </tr>
-
-            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_endTerapyDate">Fecha de baja de terapia</label>
                         <input class="form-control" data-val="true" data-val-date="The field Fecha de baja de terapia must be a date." data-val-required="The Fecha de baja de terapia field is required." id="patient_endTerapyDate" name="patient.endTerapyDate" value="1/1/2015 12:00:00 AM" type="text">
                     </div>
                 </td>
+            </tr>
+
+
+            <tr>
                 <td>
                     <div class="form-group">
                         <label for="patient_registerTerapyDate">Fecha de inscripción</label>
@@ -314,14 +316,7 @@
                 </td>
             </tr>
 
-
             <tr>
-                <td>
-                    <div class="form-group">
-                        <label for="patient_registrationDate">Fecha de inscripcion</label>
-                        <input class="form-control" data-val="true" data-val-date="The field Fecha de inscripcion must be a date." data-val-required="The Fecha de inscripcion field is required." id="patient_registrationDate" name="patient.registrationDate" value="1/1/2015 12:00:00 AM" type="text">
-                    </div>
-                </td>
                 <td>
                     <div class="form-group">
                         <label for="patient_FK_socioeconomicLevelId">Nivel socioeconómico</label>
@@ -365,7 +360,7 @@
         <p>Instituto Jose David A.C. 2015. Proyecto desarrollado por Tisco Networks.</a></p>
     </div>
 </footer>
--->
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
